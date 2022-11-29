@@ -1,0 +1,27 @@
+function gross_salary() {
+    
+const PAYE =document.getElementById ('PAYE').value;
+const basic_salary = document.getElementById (" basic_salary").value
+const NHIF_Deductions =document.getElementById ('NHIF_Deductions').value;
+const NSSF_Deductions =document.getElementById ('NSSF_Deductions').value;
+
+gross_salary = parseInt(basic_salary) + parseInt(NHIF_Deductions) + parseInt(NSSF_Deductions)
++parseInt(PAYE);
+ const Net_income =gross_salary - PAYE - NHIF_Deductions -NSSF_Deductions;
+
+ function Calculation()
+ alert(basic_salary)
+ if(basic_salary >40000){
+    tax = basic_salary * 10/100;
+    NHIF_Deductions= basic_salary - 10000;
+    NSSF_Deductions = basic_salary -200;
+ }
+
+}
+ 
+document.write('your gross salary  is \t ' + gross_salary);
+document.write('your Net_salary is \t ' + Net_salary);
+document.write('PAYE deducted on Gross pay was\t ' + PAYE )
+    
+}
+
