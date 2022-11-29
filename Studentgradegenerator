@@ -1,0 +1,35 @@
+import java.util.scanner;
+public class student grade{
+
+    public static void main(String args[])
+    int marks[]= new int[5];
+    int i;
+    float total=0, avg;
+    scanner scanner = new Scanner(system.in);
+
+
+    for (i=0; i<6; i++){
+        system.out.print("Enter student marks for subject" +(i+1)+":");
+        marks[i] =scanner.nextInt();
+        total = total + marks[i];
+    }
+    }
+    scanner.close();
+    avg = total/5;
+    System.out.print("The student grade is:");
+    if(avg>=79){
+        System.out.print("A");
+    }
+    else if(avg = 60 && avg <=79){
+        System.out.print("B");
+    }
+    else if (avg= 49 && avg <=59){
+        System.out.print ("C");
+    }
+    else if (avg =40 && avg <=49){
+    System.out.print ("D");
+    }
+
+    If(avg<=40){
+        System.out.print("E");
+    }
