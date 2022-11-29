@@ -1,0 +1,13 @@
+function speedinput()
+const x =speed
+let demerit =1 
+
+if (speed <= 70) {
+    return 'OK';
+
+} if (speed >= 70 && speed >=5 ){
+    return 'one demerit point';
+    
+}else if (speed <= 70 && speed >=5){
+    return "total number of demerit points";
+}
